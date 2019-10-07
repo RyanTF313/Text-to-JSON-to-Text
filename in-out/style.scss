@@ -1,0 +1,174 @@
+$blue: #42C5E4;
+
+// GENERAL/INDEX CSS
+html body{
+	font-family: 'Playfair Display', serif;
+
+	// HEADER CSS START
+	header{
+		.navigation, .menu2{
+			display: none;
+		}
+		.menu, .menu2{
+			width: 100%;
+			height: 50px;
+			font-size: 25px;
+			text-align: center;
+			border-bottom: 5px solid $blue;
+		}
+		.btn-outline-info{
+			border-color: $blue;
+			color: $blue;
+			margin-top: 15px;
+		}
+		.btn-outline-info:hover {
+			color: #fff;
+			background-color: $blue;
+			border-color: $blue;
+		}
+		section{
+			width: 100%;
+			text-align: center;
+		}
+	}
+	// HEADER CSS END
+	//ABOUT CSS
+	.about{
+		// box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.5);
+		h4{
+			text-align: center;
+			margin-top: 20px;
+		}
+		p{
+			text-align: center;
+		}
+	}
+	// ABOUT CSS END
+	// INTERVIEWS CSS BEGIN
+	.interviews{
+		box-shadow: 5px 5px 5px 5px rgba(0,0,0,0.5);
+		border-radius: 5%;
+		padding: 15px;
+		margin-bottom: 10px;
+
+		h4{
+			text-align: center;
+		}
+		.carousel-caption{
+			background-color: rgba(0, 0, 0, 0.5);
+			a{
+				text-decoration: none;
+				color: $blue;
+			}
+		}
+		img{
+			height: 550px;
+			border-radius: 5%;
+		}
+	}
+	// INTERVIEWS CSS END
+	// FOOTER CSS BEGIN
+	footer{
+		.socials{
+			width: 20%;
+			float: left;
+
+			a{
+				text-decoration: none;
+				color: $blue;
+			}
+		}
+		.qoute{
+			text-align: center;
+			width: 45%;
+			float: left;
+
+			p:first-of-type{
+				display: none;
+			}
+		}
+		#logo{
+			width: 35%;
+			float: left;
+
+			img{
+				width: 100%;
+				height: 150px;
+			}
+		}
+	}
+	// FOOTER CSS END
+}
+// Resume CSS
+#resume{
+	text-align: center;
+	a{
+		text-decoration: none;
+		color: $blue;
+		.btn-outline-info{
+			border-color: $blue;
+			background-color: $blue;
+			color: white;
+			margin-top: 15px;
+		}
+		.btn-outline-info:hover {
+			color: $blue;
+			background-color: white;
+			border-color: $blue;
+		}
+	}
+	h2{
+		text-align: center;
+		width: 100%;
+	}
+	.accordion{
+		width: 100%;
+		margin-bottom: 20px;
+		.title{
+			font-weight: bold;
+			border-bottom: 3px solid $blue;
+		}
+	}
+	i{
+		margin-right: 10px;
+		color: $blue;
+	}
+	.list-group-item{
+		border: 1px solid $blue;
+	}
+}
+
+// Projects CSS
+#projects{
+	text-align: center;
+	main{
+		min-height: 450px;
+	}
+	h3{
+		margin: 50px;
+	}
+}
+
+// Contact CSS
+#contact{
+	.btn-info{
+		border-color: $blue;
+		background-color: $blue;
+		color: white;
+		margin-top: 15px;
+	}
+	.btn-info:hover {
+		color: $blue;
+		background-color: white;
+		border-color: $blue;
+	}
+}
+// Responsive CSS
+@media screen and (min-width: 750px) {
+  html body footer #logo{
+		img{
+			width: 60%;
+			margin-left: 20px;
+		}
+	}
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title>Team List</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <h1>Team List</h1>
+  <main>
+    <section>
+      <ul>
+        <% if (data) { %>
+          <% for ( key in data ) {%>
+            <li>
+              <span>Name: <%= data[key]['name'] %></span>
+              <br>
+              <span>Age: <%= data[key]['age'] %></span>
+              <br>
+              <span>Company: <%= data[key]['company'] %></span>
+              <br>
+              <span>Gender Expression: <%= data[key]['gender expression'] %></span>
+              <br>
+              <span>Race: <%= data[key]['race'] %></span>
+            </li>
+            <% } %>
+        <% } %>
+        </ul>
+      </section>
+
+      <section>
+        <a href="/retrieve"><button type="button" name="button">Retrieve</button></a>
+        <a href="/checkUpdate"><button type="button" name="button">Run Update Check</button></a>
+        <a href="/add"><button type="button" name="button">Add</button></a>
+      </section>
+
+    </main>
+
+    <script type="text/javascript" src="js/main.js"></script>
+  </body>
+  </html>
